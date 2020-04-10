@@ -22,7 +22,7 @@
       <p>Reload for another quote !</p>
 
       <div class="content" id="theSimpson"></div>
-      <button type="button" id="pushHere">Another one</button>
+      <button type="button" id="pushHere" onClick='simpsonsQuotes()'>Another one</button>
     </div>
 
   </section>
@@ -46,9 +46,11 @@
       <p>${simpson.character}</p>`
             ;
           document.querySelector('#theSimpson').innerHTML = simpsonHtml;
-          document.querySelector('#pushHere').addEventListener('click', function() {
-            simpsonsQuotes();
-          })
+          
+          // randomQuote = () => {
+          //   document.querySelector('#pushHere').addEventListener('click', function() {
+          //   simpsonsQuotes();
+          //   }) }
         })
     }
 
